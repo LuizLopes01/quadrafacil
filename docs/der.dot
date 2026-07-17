@@ -1,0 +1,17 @@
+digraph DER {
+  graph [rankdir=LR, bgcolor="white", nodesep=0.7, ranksep=1.0];
+  node [shape=record, fontname="Arial", fontsize=10];
+  edge [fontname="Arial", fontsize=9];
+
+  usuarios [label="{USUARIOS|CPF (PK)\lnome\ltelefone\l}"];
+  quadras [label="{QUADRAS|id_quadra (PK)\lnome\lendereco\lsituacao\l}"];
+  modalidades [label="{MODALIDADES|id_modalidade (PK)\lnome\ldescricao\l}"];
+  reservas [label="{RESERVAS|id_reserva (PK)\ldata_reserva\lhora_inicio\lhora_fim\lsituacao\lcpf_usuario (FK)\lid_quadra (FK)\lid_modalidade (FK)\l}"];
+  qm [label="{QUADRA_MODALIDADE|id_quadra (PK/FK)\lid_modalidade (PK/FK)\l}"];
+
+  usuarios -> reservas [label="1:N"];
+  quadras -> reservas [label="1:N"];
+  modalidades -> reservas [label="1:N"];
+  quadras -> qm [label="1:N"];
+  modalidades -> qm [label="1:N"];
+}
