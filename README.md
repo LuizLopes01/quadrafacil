@@ -12,12 +12,14 @@ O controle manual das reservas pode causar conflitos de horários, perda de info
 
 Desenvolver um sistema que permita cadastrar, consultar, atualizar e excluir usuários, quadras, modalidades e reservas.
 
-## Integrantes
+## Integrantes e contribuições
 
-- Luiz Fernando Lopes da Silva
-- Wilkiry Nathan
-- José Igor de Lima Pegado
-- José Layertoni da Silva Xavier
+* **Luiz Fernando Lopes da Silva** — Organização do repositório, criação das issues e documentação no README, Desenvolvimento das operações de consulta, atualização e exclusão.
+* **Willkiry Nathan Leandro da Silva** — Revisão da estrutura do projeto e dos requisitos da atividade.
+* **José Layertoni da Silva Xavier** — Adaptação das classes Java e implementação das operações de cadastro.
+* **José Igor de Lima Pegado** — Ajustes no banco de dados, tabelas e relacionamentos.
+* **Luís Fernando da Trindade Aquino** — Revisão do DER, testes do sistema e correção de erros.
+
 
 ## Tecnologias utilizadas
 
